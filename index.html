@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <title>Document</title>
+</head>
+<style>
+audio {visibility : hidden;}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "한초롬돋음", serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-image : url("goimg/왕국1.jpg");
+  background-size : 1400px 1000px;
+}
+h1 {
+  border : 10px solid #cc9933;
+  border-radius: 20px;
+  color : red;
+  font-family:"한초롬돋음"; 
+  text-align : center ; 
+  width : 300px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#mainMenu > li {
+  float: left;
+  position: relative;
+}
+#mainMenu > li > a {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 14px 36px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(0,0,0,0.15);
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#index {
+	padding: 14px 36px;
+}
+#subMenu {
+  font-size : 0.8em;
+  position: absolute;
+  background: green;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+#subMenu > li {
+  border-radius: 20px;
+  padding: 14px 36px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+#subMenu > li >  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+#mainMenu > li:hover #subMenu {
+  opacity: 1;
+  visibility: visible;
+}
+#subMenu > li >  a:hover {
+ text-decoration: underline;
+}
+section {
+  column-width: 15em;
+  background: #dadadf;
+  padding: 2em 12em;
+}
+ </style>
+ <body>
+	<h1>잉규컵</h1><br><br>
+	<nav role="navigation">
+	<ul id="mainMenu">
+		<li><a href="#">월드컵</a>
+			<ul id="subMenu">	
+				<li><a href="과제.html" target="inG">동물</a></li>
+				<li><a href="#">식물</a></li>
+
+			</ul>
+		</li>
+		<li id="index"></li>
+		<li><a href="#">사진</a>
+			<ul id="subMenu">	
+				<li><a href="#">동물</a></li>
+				<li><a href="#">식물</a></li>
+			</ul>
+		</li>
+		<li id="index"></li>
+		<li><a href="#">커뮤니티</a>
+			<ul id="subMenu">
+				<li><a href="#">공지사항</a></li>
+				<li><a href="board_list.php" target="inG">게시판</a></li>
+			</ul>
+		</li>
+		<li id="index"></li>
+		<li><a href="add_form.php" target="inG">회원가입</a>
+			<ul id="subMenu">
+				<li><a href="login_form.php" target="inG"> 로그인&nbsp; 로그아웃</a></li>
+			</ul>
+		</li>
+	</ul>
+	</nav>
+	<br><br><br>
+	<section>
+		<p>잉규의 홈페이지에 어서오세요!</p>
+	</section>
+	<iframe width = "1400" height="800" name="inG"></iframe>
+	<audio autoplay controls loop>
+		<source src="goimg/king.mp3"type="audio/mp3">
+	</audio><br>
+ </body>
+</html>
